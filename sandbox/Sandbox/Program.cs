@@ -28,5 +28,5 @@ else if (x < y)
 }
 else
 {
-    Console.WriteLine("x is equal to y");
+    Console.WriteLine("Greater");
 }
