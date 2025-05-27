@@ -4,6 +4,22 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the ScriptureMemorizer Project.");
+        string userInput = "";
+        Reference reference = new Reference("Proverbs", 3, 5, 6);
+        Scripture scripture = new Scripture(reference, "Trust in the lord with " +
+         "all thine heart and understanding; in all thy ways acknowledge him," +
+         "and he shall direct thy paths");
+
+
+        while (userInput != "quit")
+        {
+            Console.WriteLine(reference.GetDisplayText());
+            Console.WriteLine();
+            Console.WriteLine("Press enter to continue or type 'quit' to finish");
+            userInput = Console.ReadLine();
+            scripture.HideRandomWords();
+
+            Console.Clear();
+        }
     }
 }
