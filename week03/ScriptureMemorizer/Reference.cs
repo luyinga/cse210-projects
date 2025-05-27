@@ -4,7 +4,6 @@ class Reference
 {
     string book;
     int chapter, verse, endVerse;
-    private object display;
 
     public Reference(string _book, int _chapter, int _verse)
     {
