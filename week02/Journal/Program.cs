@@ -53,5 +53,6 @@ while (menuUserInput != 5)
             journal.SaveToFile(fileNameSave);
 
             break;
+
     }
 }
