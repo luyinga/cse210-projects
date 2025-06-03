@@ -11,7 +11,7 @@ class Program
 
 
         Console.WriteLine(video.GetDisplayText());
-        //Console.WriteLine();
+        Console.WriteLine();
         //Console.WriteLine("Press enter to continue");
 
         //Console.Clear();
