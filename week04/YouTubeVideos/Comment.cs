@@ -1,35 +1,16 @@
 using System;
 
-class Comment
+public class Comment
 {
-    Video video;
-    List<Word> words;
-
-    public Comment(Video _video, string _text)
+    private string _name;
+    private string _text;
+    public Comment(string name, string text)
     {
-        video = _video;
-        words = new List<Word>();
-
-        List<string> allWords = _text.Split(' ').ToList();
-        foreach (string wordString in allWords)
-        {
-            Word newWord = new Word(wordString);
-            words.Add(newWord);
-        }
+        _name = name;
+        _text = text;
     }
-
-    public string GetDisplayText()
+    public void DisplayInfo()
     {
-        string scriptureText = "";
-
-        foreach (Word word in words)
-        {
-
-            scriptureText += word.GetDisplayText() + "";
-
-        }
-
-        return ($"{video.GetDisplayText()} {scriptureText}");
+        Console.WriteLine($"{_name} - {_text}");
     }
-
 }
